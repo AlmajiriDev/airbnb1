@@ -1,0 +1,54 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --primary-color: #f5385d;
+  }
+
+input[type="text"],input[type="password"],input[type="email"]{
+    @apply w-full border my-1 py-2 px-3 rounded-2xl;
+}
+
+button{
+    @apply bg-gray-300;
+}
+
+button.primary{
+    background-color: #f5385d;
+    @apply p-2 w-full text-white rounded-2xl
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="text"],
+input[type="password"],
+input[type="email"], 
+input[type="number"],
+input[type="tel"],  
+textarea {
+  @apply w-full border my-1 py-2 px-3 rounded-2xl;
+}
+
+textarea {
+  height: 140px;
+}
+
+button {
+  @apply bg-gray-300;
+}
+
+.primary {
+  color: theme('colors.primary'); /* Use the primary color for text color */
+}
+
+.bg-primary {
+  background-color: theme('colors.primary'); /* Use the primary color for background color */
+}
+
+button.primary {
+  @apply bg-primary p-2 w-full text-white rounded-2xl;
+}

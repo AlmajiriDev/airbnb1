@@ -1,0 +1,9 @@
+# Ignore node_modules in both api and client folders
+api/node_modules/
+client/node_modules/
+
+# Ignore .env files in both api and client folders
+api/.env
+client/.env
+
+.vscode
